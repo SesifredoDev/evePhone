@@ -1,0 +1,15 @@
+<ion-content>
+<ion-card class="loginCard">
+  <form (ngSubmit)="loginForm()">
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text"  [(ngModel)]="email" name="email" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-textarea [(ngModel)]="password" name="password" type="password" required></ion-textarea>
+    </ion-item>
+    <ion-button ion-button type="submit" block>Log In</ion-button>
+  </form>
+</ion-card>
+</ion-content>
